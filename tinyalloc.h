@@ -23,7 +23,9 @@
 #define WORDSIZE    (sizeof(void*))
 #define ALIGN_SIZE  ((int) (WORDSIZE))
 // TODO: 4*WORDSIZE to use only 16 bytes on 32 bit systems
-#define HEADER_LENGHT 32
+// #define HEADER_LENGHT 32
+// DONE: 4*WORDSIZE!
+#define HEADER_LENGHT (4 * WORDSIZE)
 
 
 typedef uint8_t ALIGN[HEADER_LENGHT];
